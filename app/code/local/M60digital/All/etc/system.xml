@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <m60digitalall translate="label">
+            <label>M60Digital Modules</label>
+            <sort_order>200</sort_order>
+        </m60digitalall>
+    </tabs>
+</config>

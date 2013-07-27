@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+	<statusboard_orders_index> 
+	
+		<reference name="root">   
+		
+			<action method="setTemplate"><template>m60digital/statusboard/page/blank.phtml</template></action>  
+		
+		</reference>
+	
+			<reference name="content">
+		
+			<block type="statusboard/orders" name="statusBoardSales" template="m60digital/statusboard/orders.phtml" before="-" />
+		
+		</reference>
+		
+	</statusboard_orders_index>
+	
+</layout>

@@ -1,0 +1,68 @@
+<config>
+
+	<tabs>
+		<statusboardconfig translate="label" module="statusboard">
+			<label>M60 Digital</label>
+			<sort_order>99999</sort_order>
+		</statusboardconfig>
+	</tabs>
+	
+	<sections>
+	
+	<statusboard_options translate="label" module="statusboard">
+	
+		<label>Statusboard</label>
+		<tab>m60digitalall</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>1000</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store> 
+		
+		<groups>
+		
+		<orders translate="label">
+		
+			<label>Recent Orders</label>
+			<comment>Status Board Data URL: http://status:password@http://www.yoursite.co.uk/statusboard/orders/</comment>
+			<frontend_type>text</frontend_type>
+			<sort_order>2</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>    
+			
+			<fields>
+			
+				<type>
+					<label>Chart Type</label>
+					<frontend_type>select</frontend_type>
+					<source_model>statusboard/type</source_model>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>  
+					<validate>required-entry</validate>                   
+				</type>
+				
+				<display>
+					<label>Display</label>
+					<frontend_type>select</frontend_type>
+					<source_model>statusboard/display</source_model>
+					<sort_order>2</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>  
+					<validate>required-entry</validate>                   
+				</display>
+			
+			</fields>
+		
+		</orders>
+		
+		</groups>
+	
+	</statusboard_options>
+	
+	</sections> 
+	
+</config>

@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<config>
+
+	<modules>
+		<M60digital_Statusboard>
+			<version>0.1.0</version>
+		</M60digital_Statusboard>
+	</modules>
+	
+	<frontend>
+	
+		<routers>
+			<statusboard>
+				<use>standard</use>
+				<args>
+					<module>M60digital_Statusboard</module>
+					<frontName>statusboard</frontName>
+				</args>
+			</statusboard>
+		</routers>
+		
+		<layout>
+			<updates>
+				<statusboard>
+					<file>statusboard.xml</file>
+				</statusboard>
+			</updates>
+		</layout>
+		
+	</frontend> 
+	
+	<global>
+	
+	<helpers>
+		<statusboard>
+			<class>M60digital_Statusboard_Helper</class>
+		</statusboard>
+	</helpers>
+	
+	<blocks>
+		<statusboard>
+			<class>M60digital_Statusboard_Block</class>
+		</statusboard>
+	</blocks>
+	
+	<models>
+		<statusboard>
+			<class>M60digital_Statusboard_Model</class>
+		</statusboard>
+	</models>
+	
+	</global>   
+	
+	<adminhtml>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<statusboard_options>
+											<title>Statusboard Section</title>
+										</statusboard_options>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>
+	
+	<default>
+		<statusboard_options>
+			<orders>
+				<type>line</type>
+				<display>count</display>
+			</orders>
+		</statusboard_options>
+	</default>
+
+</config>

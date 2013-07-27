@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+	<modules>
+		<M60digital_Statusboard>
+			<active>true</active>
+			<codePool>local</codePool>
+		</M60digital_Statusboard>
+	</modules>
+</config>
